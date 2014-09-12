@@ -36,7 +36,7 @@ func Lookup(email string) (grav *Gravatar) {
 	grav.URL = &url.URL{
 		Scheme: Scheme,
 		Host:   Host,
-		Path:   fmt.Sprintf("%s/%s", Path, grav.Hash),
+		Path:   fmt.Sprintf("/%s/%s", Path, grav.Hash),
 	}
 
 	return
